@@ -25,10 +25,10 @@
 
 package instantreports.model;
 
-import java.util.Objects;
 import com.google.gson.annotations.SerializedName;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
+import java.util.Objects;
 
 
 /**
@@ -42,8 +42,8 @@ public class Organizationunitget   {
   @SerializedName("Id")
   private String id = null;
 
-  @SerializedName("id")
-  private String id = null;
+  /*@SerializedName("id")
+  private String id = null;*/
 
   @SerializedName("Name")
   private String name = null;
@@ -84,15 +84,11 @@ public class Organizationunitget   {
     this.id = id;
   }
 
-  public Organizationunitget id(String id) {
+  /*public Organizationunitget id(String id) {
     this.id = id;
     return this;
   }
 
-   /**
-   * 
-   * @return id
-  **/
   @ApiModelProperty(example = "f4206901-c9b2-4e6e-8119-f7d623626060", value = "")
   public String getId() {
     return id;
@@ -100,7 +96,7 @@ public class Organizationunitget   {
 
   public void setId(String id) {
     this.id = id;
-  }
+  }*/
 
   public Organizationunitget name(String name) {
     this.name = name;

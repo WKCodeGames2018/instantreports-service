@@ -25,10 +25,7 @@
 
 package instantreports.model;
 
-import java.util.Objects;
 import com.google.gson.annotations.SerializedName;
-import instantreports.model.SchemaData;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 
@@ -37,8 +34,8 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2018-05-03T09:33:53.199+02:00")
 public class Schemaentry   {
-  @SerializedName("schemaData")
-  private SchemaData schemaData = null;
+/*  @SerializedName("schemaData")
+  private SchemaData schemaData = null;*/
 
   @SerializedName("ledgerType")
   private String ledgerType = null;
@@ -48,16 +45,16 @@ public class Schemaentry   {
 
   @SerializedName("key")
   private String key = null;
-
+/*
   public Schemaentry schemaData(SchemaData schemaData) {
     this.schemaData = schemaData;
     return this;
   }
 
-   /**
+   *//**
    * Get schemaData
    * @return schemaData
-  **/
+  **//*
   @ApiModelProperty(example = "null", value = "")
   public SchemaData getSchemaData() {
     return schemaData;
@@ -65,7 +62,7 @@ public class Schemaentry   {
 
   public void setSchemaData(SchemaData schemaData) {
     this.schemaData = schemaData;
-  }
+  }*/
 
   public Schemaentry ledgerType(String ledgerType) {
     this.ledgerType = ledgerType;
@@ -122,7 +119,7 @@ public class Schemaentry   {
   }
 
 
-  @Override
+  /*@Override
   public boolean equals(java.lang.Object o) {
     if (this == o) {
       return true;
@@ -153,7 +150,7 @@ public class Schemaentry   {
     sb.append("    key: ").append(toIndentedString(key)).append("\n");
     sb.append("}");
     return sb.toString();
-  }
+  }*/
 
   /**
    * Convert the given object to string with each line indented by 4 spaces
