@@ -1,4 +1,17 @@
 *.class
+target/
+out/
+logs/
+classes/
+
+audit.log
+
+# Intellij project files
+.idea/
+workspace.xml
+tasks.xml
+# ignore module files -> enable import from Maven instead!
+*.iml
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
