@@ -25,6 +25,7 @@
 
 package instantreports.api;
 
+import com.google.gson.reflect.TypeToken;
 import instantreports.ApiCallback;
 import instantreports.ApiClient;
 import instantreports.ApiException;
@@ -33,17 +34,13 @@ import instantreports.Configuration;
 import instantreports.Pair;
 import instantreports.ProgressRequestBody;
 import instantreports.ProgressResponseBody;
-
-import com.google.gson.reflect.TypeToken;
-
-import java.io.IOException;
-
 import instantreports.model.Firmendaten;
 import instantreports.model.Lohnerfassungsschluessel;
 import instantreports.model.Mitarbeiter;
 import instantreports.model.Personalfragebogen;
 import instantreports.model.Sofortmeldung;
 
+import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -1732,6 +1729,10 @@ public class PayrollApi {
     public Sofortmeldung payrollSofortmeldungGet(String authorization, String organization, String where, String order, String skip, String take) throws ApiException {
         ApiResponse<Sofortmeldung> resp = payrollSofortmeldungGetWithHttpInfo(authorization, organization, where, order, skip, take);
         return resp.getData();
+    }
+
+    public void payrollSofortMeldungPost(String authorization, String oragnization, Sofortmeldung sofortmeldung) throws ApiException {
+
     }
 
     /**
